@@ -14,13 +14,13 @@
   [str]
   (Integer/parseInt str))
 
-(def instancia 0);;qual instancia estamos trabalhando
+(def instancia 1);;qual instancia estamos trabalhando
 
 (def n_maq (strInt ((let [inicio ((le_arquivo) 1) 
                                aux (s/split inicio #"\s+")
                                ] aux) 2)))
 
-(def linha_inicial (+ 1 (* instancia (+ n_maq 3))))
+(def linha_inicial (+ 1 (* (- instancia 1) (+ n_maq 3))))
 
 (defn separa-arquivos 
   ""
@@ -40,7 +40,7 @@
 
 (def lower_bound ((find (separa-arquivos) :lb) 1)) 
 
-(def prim_linha (+ (* n_maq  instancia) (* 3 (+ instancia 1)))) ;;primeira linha do tempo de processamento da instancia a ser lida
+(def prim_linha (+ (* n_maq  (- instancia 1)) (* 3 (+ (- instancia 1) 1)))) ;;primeira linha do tempo de processamento da instancia a ser lida
 
 (def ultim_linha (+ prim_linha n_maq));;ultima linha do tempo de processamento da instancia a ser lida
 

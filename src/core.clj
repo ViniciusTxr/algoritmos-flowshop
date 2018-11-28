@@ -77,14 +77,14 @@
           ]
       (if(or (= opc 1) (= opc 2))   
         (do
-          (println "Algoritmo: "resultado " | Instancia: "(+ p/instancia 1)) 
+          (println "Algoritmo: "resultado " | Instancia: "p/instancia) 
            (if (= opc 2) 
             (do
               (with-open [w (clojure.java.io/writer "src/resultados_IG.txt" :append true)]
-                (.write w (str "-----------------------------------------------------------------------------------------\n" "Numero de trabalhos: " p/n_job "\nNumero de maquinas: " p/n_maq "\nInstancia: "(+ p/instancia 1)"\nLower bound: "p/lower_bound "\nUpper bound: "p/upper_bound "\n\n")))
+                (.write w (str "-----------------------------------------------------------------------------------------\n" "Numero de trabalhos: " p/n_job "\nNumero de maquinas: " p/n_maq "\nInstancia: "p/instancia"\nLower bound: "p/lower_bound "\nUpper bound: "p/upper_bound "\n\n")))
               (iterated 1 999999999 0 0.0 0.0 0.0)) 
             (do
               (with-open [w (clojure.java.io/writer "src/resultados_BMH.txt" :append true)]
-               (.write w (str "-----------------------------------------------------------------------------------------\n" "Numero de trabalhos: " p/n_job "\nNumero de maquinas: " p/n_maq "\nInstancia: "(+ p/instancia 1)"\nLower bound: "p/lower_bound "\nUpper bound: "p/upper_bound "\n\n")))
+               (.write w (str "-----------------------------------------------------------------------------------------\n" "Numero de trabalhos: " p/n_job "\nNumero de maquinas: " p/n_maq "\nInstancia: "p/instancia"\nLower bound: "p/lower_bound "\nUpper bound: "p/upper_bound "\n\n")))
               (monkey 1 999999999 0 0.0 0.0)))
         )resultado)))
