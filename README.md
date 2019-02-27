@@ -4,6 +4,8 @@ Os algoritmos Iteração Gulosa com Busca Local em Soluções Parciai, Busca do 
 
 Os resultados podem ser encontrados dentro da pasta 'resultados/'. Cada método gerou uma subpasta com seus respectivos resultados. Dentro da pasta 'resultados/IG' contém os resultados obtidos para os três criterios de parada, 'T60', 'T120' e 'T240'. Todos os resultados estão no formato de arquivo '.txt'.
 
+##### O artigo original deste trabalho com todas as explicações, analises de resultado entre os métodos e os detalhes da implementação podem ser encontrados em: https://repositorio.ufu.br/handle/123456789/24420 
+
 
 ### Executando os Algoritmos
 Para executar os algoritmos deve-se ter instalado o Leiningen e o Java Develpment Kit (JDK).
@@ -101,7 +103,7 @@ O algoritmo IG_BLSP tem três críterios de parada possíveis chamados de: T60, 
 
 
  
-##### O artigo original deste trabalho com todas as explicações, analises de resultado entre os métodos e os detalhes da implementação podem ser encontrados em: (monografia em aprovação, link aqui em breve).     
+##### O artigo original deste trabalho com todas as explicações, analises de resultado entre os métodos e os detalhes da implementação podem ser encontrados em: https://repositorio.ufu.br/handle/123456789/24420     
    
     
 ###### Autor: Vinicius Lopes da Silva Teixeira
